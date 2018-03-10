@@ -6,3 +6,5 @@ Naomi
 Hello world
 
 I was here 
+
+This to see if I could get into this easily using an SSH key
