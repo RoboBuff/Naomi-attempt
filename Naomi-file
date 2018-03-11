@@ -59,3 +59,15 @@ public void testPeriodic() {
 LiveWindow.run();
 }
 }
+
+//Teleop arcade drive
+//The teleopInit method is called once each time the robot enters teleop mode
+
+public void teleopInit() {
+}
+//The teleopPeriodic method is entered each time the robot receives a packet instructing it to be in teleoperated enabled mode
+public void teleopPeriodic() { 
+
+//This line drives the robot using the values of the joystick and the motor controllers selected above
+     myRobot.arcadeDrive(stick); 
+}
