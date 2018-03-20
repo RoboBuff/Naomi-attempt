@@ -1,12 +1,12 @@
-exampleStick = new Joystick(1);
+stick = new Joystick(0);
 
 double value;
-value = exampleStick.getX();
-value = exampleStick.getY();
-value = exampleStick.getZ();
-value = exampleStick.getThrottle();
-value = exampleStick.getTwist();
+value = Stick.getX();
+value = Stick.getY();
+value = Stick.getZ();
+value = Stick.getThrottle();
+value = Stick.getTwist();
 
 boolean buttonValue;
-buttonValue = exampleStick.getTop();
-buttonValue = exampleStick.getTrigger();
+buttonValue = Stick.getTop();
+buttonValue = Stick.getTrigger();
