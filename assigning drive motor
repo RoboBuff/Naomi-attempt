@@ -1,0 +1,22 @@
+RobotDrive drive = new RobotDrive(1,2,3,4) // 4 motor drive
+    
+    public class RobotTemplate extends SampleRobot {
+
+	RobotDrive myDrive;
+	Joystick driveStick;
+	
+    public void robotInit() {
+    	myDrive = new RobotDrive(1,2,3,4);
+    	driveStick = new Joystick(0);
+    }
+
+    public void autonomousPeriodic() {
+
+    }
+
+    public void operatorControl() {
+    	while (isOperatorControl() && isEnabled()) {
+    		myDrive.arcadeDrive(driveStick);
+    		Timer.delay(0.01);
+    	}
+    }
