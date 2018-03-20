@@ -25,7 +25,6 @@ LeftDrive.setInverted(true);
 RightDrive.setInverted(true);
 
 
-stick = new Joystick(0);
 timer = new Timer();}
 @Override
 public void autonomousInit() {
