@@ -1,5 +1,14 @@
-stick = new Joystick(0);
+package edu.wpi.first.wpilibj.templates;
 
+import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.RobotDrive;
+import edu.wpi.first.wpilibj.SimpleRobot;
+
+public class RobotTemplate extends SimpleRobot {
+  RobotDrive drive = new RobotDrive(1, 2, 3, 4);
+  Joystick Stick = new Joystick(1);
+
+//check if needed
 double value;
 value = Stick.getX();
 value = Stick.getY();
