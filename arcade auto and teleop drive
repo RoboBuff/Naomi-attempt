@@ -8,8 +8,22 @@ import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-public class Robot extends IterativeRobot {
-RobotDrive myRobot;
+
+public class RobotTemplate extends SimpleRobot {
+RobotDrive drive = new RobotDrive(2, 3, 12, 13);
+Stick = new Joystick(1);
+
+double value;
+value = Stick.getX();
+value = Stick.getY();
+value = Stick.getZ();
+value = Stick.getThrottle();
+value = Stick.getTwist();
+
+boolean buttonValue;
+buttonValue = Stick.getTop();
+buttonValue = Stick.getTrigger();
+
 Talon LeftDrive;
 Talon RightDrive;
 Joystick stick;
