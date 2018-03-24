@@ -11,7 +11,6 @@ public void autonomous (){
           drive.drive(-0.5, 0.0);
           Time.delay(0);
           drive.drive(0.0, 0.0);
-          
          }
 }
 
@@ -21,9 +20,6 @@ public void operatorControl (){
          drive.arcadeDrive(Stick);
          
 }
-
-
-
 
 @Override
 public void robotInit() {
@@ -53,25 +49,16 @@ public void autonomousPeriodic() {
           myRobot.drive(0.0, 0.0);
      }
 }
+
 //teleop code starts here
-@Override
-public void teleopPeriodic() {
-myRobot.arcadeDrive(stick);
-}
-@Override
-public void testPeriodic() {
-LiveWindow.run();
-}
-}
+
 
 //Teleop arcade drive
 //The teleopInit method is called once each time the robot enters teleop mode
 
-public void teleopInit() {
+@Override
+     public void teleopInit() {
 }
-//The teleopPeriodic method is entered each time the robot receives a packet instructing it to be in teleoperated enabled mode
-public void teleopPeriodic() { 
-
-//This line drives the robot using the values of the joystick and the motor controllers selected above
-     myRobot.arcadeDrive(stick); 
+     public void teleopPeriodic() {
+          myRobot.arcadeDrive(stick);
 }
