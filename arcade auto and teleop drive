@@ -21,6 +21,7 @@ public void operatorControl (){
          
 }
 
+//@Override is used to override a parent class - we might need to rethink using this for our final code. - Mentor Bryan
 @Override
 public void robotInit() {
 LeftDrive = new LeftTalons (2, 3);
